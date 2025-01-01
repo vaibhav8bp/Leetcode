@@ -2,7 +2,7 @@ package org.example.Daily._2024.December._14;
 
 // Most Optimal Solution - O(N^2)
 
-class Solution {
+public class _2762_Continuous_Subarrays {
 
     public long continuousSubarrays(int[] nums) {
         long answer = 0;
@@ -112,8 +112,3 @@ class Solution {
 //    }
 //}
 
-public class _2762_Continuous_Subarrays {
-    public static void main(String[] args) {
-        System.out.println(new Solution().continuousSubarrays(new int[]{5, 4, 2, 4}));
-    }
-}
