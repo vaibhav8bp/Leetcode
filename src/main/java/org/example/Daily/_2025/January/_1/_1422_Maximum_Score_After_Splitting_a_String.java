@@ -1,9 +1,5 @@
 package org.example.Daily._2025.January._1;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
 public class _1422_Maximum_Score_After_Splitting_a_String {
 
     public int maxScore(String s) {
