@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// https://leetcode.com/problems/word-subsets/description
 public class _916_Word_Subsets {
 
     private boolean doesCurrentStringHaveAllSubsets(String currentWord, int[] finalMaximumCharacterFrequencyMapping, int[] tempFrequencyForCurrentWord) {

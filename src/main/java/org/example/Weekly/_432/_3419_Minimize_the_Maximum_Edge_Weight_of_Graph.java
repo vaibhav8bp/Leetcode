@@ -5,6 +5,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 
+// https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph/
+// TODO : Pending
 class Edge {
     int source;
     int destination;
@@ -17,7 +19,7 @@ class Edge {
     }
 }
 
-public class Q3_Minimize_the_Maximum_Edge_Weight_of_Graph {
+public class _3419_Minimize_the_Maximum_Edge_Weight_of_Graph {
 
     private boolean isEdgeRemovalPossible(int n, List<Edge> newEdges, PriorityQueue<Edge> maxWeightPriorityQueue, int threshold) {
         return true;

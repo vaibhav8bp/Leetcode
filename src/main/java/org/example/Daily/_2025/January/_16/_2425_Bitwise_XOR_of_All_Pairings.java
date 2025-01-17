@@ -1,5 +1,6 @@
 package org.example.Daily._2025.January._16;
 
+// https://leetcode.com/problems/bitwise-xor-of-all-pairings/description
 public class _2425_Bitwise_XOR_of_All_Pairings {
     private int XORCalculator(int[] arr) {
         int xor = 0;

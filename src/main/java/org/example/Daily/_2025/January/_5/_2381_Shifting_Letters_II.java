@@ -2,6 +2,7 @@ package org.example.Daily._2025.January._5;
 
 import java.util.Arrays;
 
+// https://leetcode.com/problems/shifting-letters-ii/description
 public class _2381_Shifting_Letters_II {
 
     public String shiftingLetters(String s, int[][] shifts) {

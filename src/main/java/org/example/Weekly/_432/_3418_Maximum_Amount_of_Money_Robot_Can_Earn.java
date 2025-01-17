@@ -1,6 +1,8 @@
 package org.example.Weekly._432;
 
-public class Q2_Maximum_Amount_of_Money_Robot_Can_Earn {
+// https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn
+// TODO: Wrong Answer Coming
+public class _3418_Maximum_Amount_of_Money_Robot_Can_Earn {
 
     private static final int MAXIMUM_NEUTRAL_ROBBERS_COUNT = 2;
     private static final int[][] DIRECTIONS = {{+1, 0}, {0, +1}};

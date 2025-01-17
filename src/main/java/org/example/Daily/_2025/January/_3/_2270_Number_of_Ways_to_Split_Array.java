@@ -1,5 +1,6 @@
 package org.example.Daily._2025.January._3;
 
+// https://leetcode.com/problems/number-of-ways-to-split-array/description
 public class _2270_Number_of_Ways_to_Split_Array {
 
     public int waysToSplitArray(int[] nums) {

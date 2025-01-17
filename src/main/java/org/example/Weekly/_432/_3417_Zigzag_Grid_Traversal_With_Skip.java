@@ -3,7 +3,8 @@ package org.example.Weekly._432;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Q1_Zigzag_Grid_Traversal_With_Skip {
+// https://leetcode.com/problems/zigzag-grid-traversal-with-skip/description
+public class _3417_Zigzag_Grid_Traversal_With_Skip {
     public List<Integer> zigzagTraversal(int[][] grid) {
         List<Integer> result = new ArrayList<>();
         int rowsCount = grid.length;

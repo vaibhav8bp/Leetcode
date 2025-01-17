@@ -2,6 +2,7 @@ package org.example.Daily._2025.January._4;
 
 import java.util.*;
 
+// https://leetcode.com/problems/unique-length-3-palindromic-subsequences/description
 public class _1930_Unique_Length_3_Palindromic_Subsequences {
 
     // Maintain minIndex and maxIndex array for every character,that will store the first and last index

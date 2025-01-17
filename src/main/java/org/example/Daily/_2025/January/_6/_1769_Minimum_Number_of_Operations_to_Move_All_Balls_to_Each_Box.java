@@ -1,5 +1,6 @@
 package org.example.Daily._2025.January._6;
 
+// https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/description
 public class _1769_Minimum_Number_of_Operations_to_Move_All_Balls_to_Each_Box {
 
     // Most Optimized Solution

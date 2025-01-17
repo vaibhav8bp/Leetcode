@@ -3,6 +3,7 @@ package org.example.Daily._2025.January._7;
 import java.util.ArrayList;
 import java.util.List;
 
+// https://leetcode.com/problems/string-matching-in-an-array/description
 public class _1408_String_Matching_in_an_Array {
 
     public List<String> stringMatching(String[] words) {

@@ -3,6 +3,7 @@ package org.example.Daily._2025.January._11;
 import java.util.HashMap;
 import java.util.Map;
 
+// https://leetcode.com/problems/construct-k-palindrome-strings/description
 public class _1400_Construct_K_Palindrome_Strings {
     public boolean canConstruct(String s, int k) {
         if (s.length() < k) {

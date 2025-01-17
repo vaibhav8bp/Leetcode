@@ -1,5 +1,6 @@
 package org.example.Daily._2025.January._8;
 
+// https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/description
 public class _3042_Count_Prefix_and_Suffix_Pairs_I {
 
     private boolean isStr1BothPrefixAndSuffixOfStr2(String str1, String str2) {

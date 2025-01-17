@@ -2,6 +2,7 @@ package org.example.Daily._2025.January._2;
 
 import java.util.*;
 
+// https://leetcode.com/problems/count-vowel-strings-in-ranges/description
 public class _2559_Count_Vowel_Strings_in_Ranges {
 
     private Set<Character> vowels = new HashSet<>(List.of('a', 'e', 'i', 'o', 'u'));
