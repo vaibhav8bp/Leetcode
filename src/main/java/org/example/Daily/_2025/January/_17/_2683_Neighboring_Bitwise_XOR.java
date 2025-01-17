@@ -14,6 +14,6 @@ public class _2683_Neighboring_Bitwise_XOR {
     }
 
     public boolean doesValidArrayExist(int[] derived) {
-        return (XORCalculator(derived) % 2 == 0);
+        return (XORCalculator(derived) == 0);
     }
 }
