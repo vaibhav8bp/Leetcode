@@ -3,6 +3,7 @@ package org.example.Daily._2025.January._22;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// https://leetcode.com/problems/map-of-highest-peak/
 public class _1765_Map_of_Highest_Peak {
 
     private boolean isIndexValid(int currentRow, int rowCount, int currentColumn, int columnCount) {

@@ -1,5 +1,6 @@
 package org.example.Daily._2025.January._23;
 
+// https://leetcode.com/problems/count-servers-that-communicate/
 public class _1267_Count_Servers_that_Communicate {
     public int countServers(int[][] grid) {
         int rowCount = grid.length;

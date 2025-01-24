@@ -2,6 +2,7 @@ package org.example.Daily._2025.January._24;
 
 import java.util.*;
 
+// https://leetcode.com/problems/find-eventual-safe-states/
 public class _802_Find_Eventual_Safe_States {
 
     public List<Integer> eventualSafeNodes(int[][] graph) {
