@@ -5,7 +5,6 @@ import java.util.*;
 // https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/
 public class _2948_Make_Lexicographically_Smallest_Array_by_Swapping_Elements {
     public int[] lexicographicallySmallestArray(int[] nums, int limit) {
-
         int[][] sorted = new int[nums.length][2];
 
         for (int i = 0; i < nums.length; i++) {
@@ -47,7 +46,7 @@ public class _2948_Make_Lexicographically_Smallest_Array_by_Swapping_Elements {
 //        nums[leftIndex] = nums[rightIndex];
 //        nums[rightIndex] = temp;
 //    }
-//
+
 //    private static int getCurrentIndexForContention(int[] nums, int limit, int leftIndexForSwapping) {
 //        int currentIndexForContention = -1;
 //        for (int rightIndexForSwapping = leftIndexForSwapping + 1; rightIndexForSwapping < nums.length; rightIndexForSwapping++) {
@@ -61,18 +60,18 @@ public class _2948_Make_Lexicographically_Smallest_Array_by_Swapping_Elements {
 //        }
 //        return currentIndexForContention;
 //    }
-//
+
 //    public int[] lexicographicallySmallestArray(int[] nums, int limit) {
-//
+
 //        for (int leftIndexForSwapping = 0; leftIndexForSwapping < nums.length; leftIndexForSwapping++) {
 //            int currentIndexForContention = getCurrentIndexForContention(nums, limit, leftIndexForSwapping);
-//
+
 //            if (currentIndexForContention != -1) {
 //                swap(nums, leftIndexForSwapping, currentIndexForContention);
 //                // This is because now at leftIndex there is a smaller element, now a smaller element can be found
 //                // in right of new leftIndex because of limit constraint, as earlier there was a bigger no. now a
 //                // smaller no. is there and constraint needs to be rechecked.
-//
+
 //                // Eg. 6 4 2 with limit 2.
 //                // First Swap
 //                // 4 6 2
@@ -80,7 +79,7 @@ public class _2948_Make_Lexicographically_Smallest_Array_by_Swapping_Elements {
 //                leftIndexForSwapping--;
 //            }
 //        }
-//
+
 //        return nums;
 //    }
 }

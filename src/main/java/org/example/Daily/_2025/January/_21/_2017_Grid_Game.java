@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 // https://leetcode.com/problems/grid-game/
 public class _2017_Grid_Game {
-
     public long gridGame(int[][] grid) {
 
         int columnLength = grid[0].length;
@@ -17,11 +16,11 @@ public class _2017_Grid_Game {
             remainingSumOfFirstRow -= grid[0][downIndex];
             long currentIndexScore;
             if (downIndex == 0) {
-                currentIndexScore = Math.min(maxScoreOfPlayer2, remainingSumOfFirstRow);
+                currentIndexScore = remainingSumOfFirstRow;
             } else if (downIndex == columnLength - 1) {
-                currentIndexScore = Math.min(maxScoreOfPlayer2, prefixSumOfSecondRow);
+                currentIndexScore = prefixSumOfSecondRow;
             } else {
-                currentIndexScore = Math.min(maxScoreOfPlayer2, Math.max(remainingSumOfFirstRow, prefixSumOfSecondRow));
+                currentIndexScore = Math.max(remainingSumOfFirstRow, prefixSumOfSecondRow);
             }
             maxScoreOfPlayer2 = Math.min(maxScoreOfPlayer2, currentIndexScore);
             prefixSumOfSecondRow += grid[1][downIndex];
