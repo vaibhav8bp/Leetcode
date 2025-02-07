@@ -1,5 +1,6 @@
 package org.example.Daily._2025.February._3;
 
+// https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/
 public class _3105_Longest_Strictly_Increasing_or_Strictly_Decreasing_Subarray {
 
     public int longestMonotonicSubarray(int[] nums) {

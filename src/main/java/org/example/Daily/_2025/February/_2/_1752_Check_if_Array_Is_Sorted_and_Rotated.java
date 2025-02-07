@@ -1,5 +1,6 @@
 package org.example.Daily._2025.February._2;
 
+// https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
 public class _1752_Check_if_Array_Is_Sorted_and_Rotated {
 
     // 3 4 5 6 7 8 8 1
