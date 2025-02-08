@@ -73,29 +73,6 @@ public class _2493_Divide_Nodes_Into_the_Maximum_Number_of_Groups {
         return depth;
     }
 
-    private int findFarthestNode(int start, List<Integer>[] graph) {
-        Queue<Integer> queue = new LinkedList<>();
-        boolean[] visited = new boolean[graph.length];
-        queue.offer(start);
-        visited[start] = true;
-
-        int farthestNode = start;
-
-        while (!queue.isEmpty()) {
-            int node = queue.poll();
-            farthestNode = node;
-
-            for (int neighbor : graph[node]) {
-                if (!visited[neighbor]) {
-                    visited[neighbor] = true;
-                    queue.offer(neighbor);
-                }
-            }
-        }
-
-        return farthestNode;
-    }
-
     private int findGroupLengthOfComponent(List<Integer> component, List<Integer>[] graph) {
 
         int answer = 0;
