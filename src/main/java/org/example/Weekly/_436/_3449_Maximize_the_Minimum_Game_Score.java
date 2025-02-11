@@ -4,8 +4,68 @@ package org.example.Weekly._436;
 
 public class _3449_Maximize_the_Minimum_Game_Score {
 
+    // In this function, I have used the methodology that how many steps will be taken in total
+    // for currentIndex, that is i to fulfill its quota, that also includes moving to ith index,
+    // After every iteration calculation is done so that how many moves were required to fulfill quota
+    // and move to i, in next iteration we will again count moves required for (i+1) which will always count
+    // 1 move for moving to (i+1). This is because we are starting to move from -1 initially, even moving to 0
+    // index required 1 step.
+
+    private boolean canCurrentScoreBeAchievedAtAllIndices(int[] points, long targetScore, int m) {
+        long previousPointsAccumulated = 0;
+        long totalMovesTaken = 0;
+
+        for (int i = 0; i < points.length; i++) {
+            long minimumPointsNeededForCurrentIndex = targetScore - previousPointsAccumulated;
+
+            // Check, if No Additional Moves Required For Current Index
+            // Assign previousPointsAccumulated to 0 for next iteration
+            // and increment totalMovesTaken by 1 to accommodate moving to ith index.
+            if (minimumPointsNeededForCurrentIndex <= 0) {
+                // If last index quota's is already filled, we will not even move to that index.
+                // What will we do there ? Time pass ?
+                if (i == points.length - 1) {
+                    return true;
+                } else {
+                    totalMovesTaken++;
+                    if (totalMovesTaken > m) {
+                        return false;
+                    }
+                    previousPointsAccumulated = 0;
+                    continue;
+                }
+            }
+            long minimumMovesToAccumulateMinimumPoints = (long) Math.ceil((double) minimumPointsNeededForCurrentIndex / points[i]);
+            totalMovesTaken += (2 * minimumMovesToAccumulateMinimumPoints - 1);
+            if (totalMovesTaken > m) {
+                return false;
+            }
+            if (i != points.length - 1) {
+                previousPointsAccumulated = (minimumMovesToAccumulateMinimumPoints - 1) * (points[i + 1]);
+            }
+        }
+
+        return true;
+    }
+
     public long maxScore(int[] points, int m) {
-        return 0;
+        long left = 0;
+        long right = ((long) (m + 1) * points[0]) / 2;
+
+        long answer = 0;
+
+        while (left <= right) {
+            long mid = (left + right) / 2;
+
+            if (canCurrentScoreBeAchievedAtAllIndices(points, mid, m)) {
+                answer = mid;
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+
+        return answer;
     }
 
 //    private long findMinimumValueInArray(long[] gameScore) {
