@@ -1,17 +1,28 @@
 package org.example.Bi_Weekly._148;
 
+import java.util.Arrays;
+
 // https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/
-// TODO: Pending
+
 public class _3424_Minimum_Cost_to_Make_Arrays_Identical {
+
     public long minCost(int[] arr, int[] brr, long k) {
-        int[] relativeDifference = new int[arr.length];
+
+        long withoutChangingOrderingDifference = 0;
 
         for (int i = 0; i < arr.length; i++) {
-            relativeDifference[i] = Math.abs(arr[i] - brr[i]);
+            withoutChangingOrderingDifference += (Math.abs(brr[i] - arr[i]));
         }
 
+        long changingOrderingDifference = k;
 
+        Arrays.sort(arr);
+        Arrays.sort(brr);
 
-        return 0;
+        for (int i = 0; i < arr.length; i++) {
+            changingOrderingDifference += (Math.abs(brr[i] - arr[i]));
+        }
+
+        return Math.min(withoutChangingOrderingDifference, changingOrderingDifference);
     }
 }
