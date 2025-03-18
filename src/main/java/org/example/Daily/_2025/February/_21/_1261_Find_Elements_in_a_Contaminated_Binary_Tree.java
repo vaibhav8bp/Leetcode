@@ -2,10 +2,7 @@ package org.example.Daily._2025.February._21;
 
 // https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Set;
+import java.util.*;
 
 class TreeNode {
     int val;
@@ -28,10 +25,10 @@ class TreeNode {
 
 class FindElements {
 
-    Set<Integer> elements;
+    Map<Integer, Boolean> elements;
 
     public FindElements(TreeNode root) {
-        elements = new HashSet<>();
+        elements = new HashMap<>();
         if (root != null) {
             root.val = 0;
             Queue<TreeNode> queue = new LinkedList<>();
@@ -39,7 +36,7 @@ class FindElements {
 
             while (!queue.isEmpty()) {
                 TreeNode front = queue.remove();
-                elements.add(front.val);
+                elements.put(front.val, true);
 
                 if (front.left != null) {
                     front.left.val = 2 * front.val + 1;
@@ -55,7 +52,7 @@ class FindElements {
     }
 
     public boolean find(int target) {
-        return elements.contains(target);
+        return elements.containsKey(target);
     }
 }
 
