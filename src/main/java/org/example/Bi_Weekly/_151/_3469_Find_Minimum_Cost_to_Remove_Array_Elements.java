@@ -1,6 +1,6 @@
 package org.example.Bi_Weekly._151;
 
-public class Q3_Find_Minimum_Cost_to_Remove_Array_Elements {
+public class _3469_Find_Minimum_Cost_to_Remove_Array_Elements {
 
     public int minCost(int[] nums) {
 

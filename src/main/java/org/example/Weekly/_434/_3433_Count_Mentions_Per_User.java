@@ -3,12 +3,13 @@ package org.example.Weekly._434;
 import java.util.Collections;
 import java.util.List;
 
-public class Q2_Count_Mentions_Per_User {
+// https://leetcode.com/problems/count-mentions-per-user/description/
+public class _3433_Count_Mentions_Per_User {
     public int[] countMentions(int numberOfUsers, List<List<String>> events) {
         int[] mentions = new int[numberOfUsers];
         int[] nextAvailable = new int[numberOfUsers];
 
-        Collections.sort(events, (o1, o2) -> {
+        events.sort((o1, o2) -> {
             if (Integer.parseInt(o1.get(1)) != Integer.parseInt(o2.get(1))) {
                 return Integer.compare(Integer.parseInt(o1.get(1)), Integer.parseInt(o2.get(1)));
             } else {

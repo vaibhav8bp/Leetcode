@@ -1,6 +1,7 @@
 package org.example.Bi_Weekly._151;
 
-public class Q1_Transform_Array_by_Parity {
+// https://leetcode.com/problems/transform-array-by-parity/description/
+public class _3467_Transform_Array_by_Parity {
     public int[] transformArray(int[] nums) {
         int evenCount = 0;
 

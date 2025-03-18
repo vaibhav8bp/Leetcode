@@ -2,7 +2,8 @@ package org.example.Weekly._434;
 
 import java.util.Arrays;
 
-public class Q1_Count_Partitions_with_Even_Sum_Difference {
+// https://leetcode.com/problems/count-partitions-with-even-sum-difference/description/
+public class _3432_Count_Partitions_with_Even_Sum_Difference {
     public int countPartitions(int[] nums) {
         long totalSum = Arrays.stream(nums).sum();
 
