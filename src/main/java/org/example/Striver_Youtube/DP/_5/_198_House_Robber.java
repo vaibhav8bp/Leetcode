@@ -4,22 +4,43 @@ package org.example.Striver_Youtube.DP._5;
 public class _198_House_Robber {
 
     public int rob(int[] nums) {
-        int[] dp = new int[nums.length + 1];
-        dp[nums.length] = 0;
 
-        for (int i = nums.length - 1; i >= 0; i--) {
+        int last = 0;
+        int secondLast = nums[nums.length - 1];
+        int current = last + secondLast;
+
+        for (int i = nums.length - 2; i >= 0; i--) {
             int lootCurrentHouse = nums[i];
 
             if (i + 2 <= nums.length) {
-                lootCurrentHouse += dp[i + 2];
+                lootCurrentHouse += last;
             }
 
-            int excludeCurrentHouse = dp[i + 1];
-            dp[i] = Math.max(lootCurrentHouse, excludeCurrentHouse);
+            current = Math.max(lootCurrentHouse, secondLast);
+            last = secondLast;
+            secondLast = current;
         }
 
-        return dp[0];
+        return current;
     }
+
+//    public int rob(int[] nums) {
+//        int[] dp = new int[nums.length + 1];
+//        dp[nums.length] = 0;
+//
+//        for (int i = nums.length - 1; i >= 0; i--) {
+//            int lootCurrentHouse = nums[i];
+//
+//            if (i + 2 <= nums.length) {
+//                lootCurrentHouse += dp[i + 2];
+//            }
+//
+//            int excludeCurrentHouse = dp[i + 1];
+//            dp[i] = Math.max(lootCurrentHouse, excludeCurrentHouse);
+//        }
+//
+//        return dp[0];
+//    }
 
 //    private int rob(int currentIndex, int[] nums, int[] dp) {
 //        if (currentIndex == nums.length) {
