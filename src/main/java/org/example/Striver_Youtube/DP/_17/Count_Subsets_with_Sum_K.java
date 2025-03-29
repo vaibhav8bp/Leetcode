@@ -1,5 +1,6 @@
 package org.example.Striver_Youtube.DP._17;
 
+// https://www.naukri.com/code360/problems/count-subsets-with-sum-k_3952532
 public class Count_Subsets_with_Sum_K {
 
     // Optimized DP

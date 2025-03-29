@@ -165,7 +165,7 @@ public class _887_Super_Egg_Drop {
 
 //    public int superEggDrop(int numberOfEggs, int numberOfFloors) {
 //
-//        if (numberOfEggs == 1) {
+//        if (numb erOfEggs == 1) {
 //            // Consider worst case for guarantee.
 //            return numberOfFloors;
 //        }
