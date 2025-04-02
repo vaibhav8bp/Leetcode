@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_2_Arrays_Part_II._287_Find_The_Duplicate_Number;
 
+// https://leetcode.com/problems/find-the-duplicate-number/description/
 class Solution {
     public int findDuplicate(int[] nums) {
         int slow = nums[0];

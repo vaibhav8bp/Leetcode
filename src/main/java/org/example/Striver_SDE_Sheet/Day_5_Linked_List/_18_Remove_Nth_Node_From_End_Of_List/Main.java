@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_5_Linked_List._18_Remove_Nth_Node_From_End_Of_List;
 
+// https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 class ListNode {
     int val;
     ListNode next;

@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_5_Linked_List._876_Middle_Of_The_Linked_List;
 
+// https://leetcode.com/problems/middle-of-the-linked-list/description/
 class ListNode {
     int val;
     ListNode next;

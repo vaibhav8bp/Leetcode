@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_3_Arrays_Part_III._50_Pow_x_n;
 
+// https://leetcode.com/problems/powx-n/description/
 class Solution {
    public double myPow(double x, int n) {
        int positiveN = Math.abs(n);

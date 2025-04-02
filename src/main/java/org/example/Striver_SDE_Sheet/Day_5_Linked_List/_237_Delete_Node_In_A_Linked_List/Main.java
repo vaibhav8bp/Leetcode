@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_5_Linked_List._237_Delete_Node_In_A_Linked_List;
 
+// https://leetcode.com/problems/delete-node-in-a-linked-list/description/
 class ListNode {
     int val;
     ListNode next;

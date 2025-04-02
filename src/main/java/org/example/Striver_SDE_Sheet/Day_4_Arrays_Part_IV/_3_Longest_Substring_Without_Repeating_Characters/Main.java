@@ -2,6 +2,7 @@ package org.example.Striver_SDE_Sheet.Day_4_Arrays_Part_IV._3_Longest_Substring_
 
 import java.util.*;
 
+// https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         Map<Character, Integer> currentLongestMapping = new HashMap<>();

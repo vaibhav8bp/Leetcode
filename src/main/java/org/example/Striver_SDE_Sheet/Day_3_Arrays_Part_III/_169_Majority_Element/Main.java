@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_3_Arrays_Part_III._169_Majority_Element;
 
+// https://leetcode.com/problems/majority-element/
 class Solution {
     public int majorityElement(int[] nums) {
         int element = nums[0];

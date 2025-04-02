@@ -1,7 +1,5 @@
 package org.example.Random;
 
-import java.util.Arrays;
-
 // https://leetcode.com/problems/cherry-pickup/description/
 public class _741_Cherry_Pickup {
 

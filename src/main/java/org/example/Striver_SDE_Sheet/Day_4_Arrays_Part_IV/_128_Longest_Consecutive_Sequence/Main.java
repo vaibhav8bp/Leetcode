@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+// https://leetcode.com/problems/longest-consecutive-sequence/description/
 class Solution {
     public int longestConsecutive(int[] nums) {
         Map<Integer, Boolean> integerBooleanMap = new HashMap<>();

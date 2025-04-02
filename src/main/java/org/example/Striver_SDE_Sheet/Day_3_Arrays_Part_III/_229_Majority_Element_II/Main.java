@@ -3,6 +3,7 @@ package org.example.Striver_SDE_Sheet.Day_3_Arrays_Part_III._229_Majority_Elemen
 import java.util.ArrayList;
 import java.util.List;
 
+// https://leetcode.com/problems/majority-element-ii/description/
 class Solution {
     public List<Integer> majorityElement(int[] nums) {
         int countOfElementA = 0;

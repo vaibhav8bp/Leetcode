@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+// https://leetcode.com/problems/two-sum/description/
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> numberToIndexMapping = new HashMap<>();

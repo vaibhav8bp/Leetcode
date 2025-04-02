@@ -1,7 +1,5 @@
 package org.example.Random;
 
-import org.example.Striver_SDE_Sheet.Day_17_Binary_Tree.Top_View_Of_Binary_Tree.Tree;
-
 // https://leetcode.com/problems/valid-palindrome/description/
 public class _125_Valid_Palindrome {
 
