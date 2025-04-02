@@ -1,6 +1,6 @@
 package org.example.Daily._2025.January._28;
 
-// https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/submissions/
+// https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/
 public class _2658_Maximum_Number_of_Fish_in_a_Grid {
 
     // Down,Left,Right,Up

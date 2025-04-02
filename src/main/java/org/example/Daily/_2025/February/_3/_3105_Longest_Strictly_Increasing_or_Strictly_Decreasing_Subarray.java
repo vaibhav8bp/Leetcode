@@ -7,7 +7,7 @@ public class _3105_Longest_Strictly_Increasing_or_Strictly_Decreasing_Subarray {
 
         // Taking 1 as we will start iterating from 1 index
         int maxIncreasingLength = 1;
-        int minIncreasingLength = 1;
+        int maxDecreasingLength = 1;
 
         int answer = 1;
 
@@ -15,20 +15,20 @@ public class _3105_Longest_Strictly_Increasing_or_Strictly_Decreasing_Subarray {
             // Increasing Subarray
             if (nums[i] > nums[i - 1]) {
                 maxIncreasingLength++;
-                minIncreasingLength = 1;
+                maxDecreasingLength = 1;
             }
             // Decreasing Subarray
             else if (nums[i] < nums[i - 1]) {
-                minIncreasingLength++;
+                maxDecreasingLength++;
                 maxIncreasingLength = 1;
             }
             // Equal Consecutive Elements
             else {
                 maxIncreasingLength = 1;
-                minIncreasingLength = 1;
+                maxDecreasingLength = 1;
             }
 
-            answer = Math.max(answer, Math.max(maxIncreasingLength, minIncreasingLength));
+            answer = Math.max(answer, Math.max(maxIncreasingLength, maxDecreasingLength));
         }
 
         return answer;

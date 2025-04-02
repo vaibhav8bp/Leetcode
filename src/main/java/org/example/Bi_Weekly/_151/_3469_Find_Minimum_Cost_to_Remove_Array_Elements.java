@@ -1,5 +1,6 @@
 package org.example.Bi_Weekly._151;
 
+// https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/description/
 public class _3469_Find_Minimum_Cost_to_Remove_Array_Elements {
 
     public int minCost(int[] nums) {
@@ -12,9 +13,7 @@ public class _3469_Find_Minimum_Cost_to_Remove_Array_Elements {
 
         int[] initialDp = new int[nums.length];
 
-        for (int i = 0; i < nums.length; i++) {
-            initialDp[i] = nums[i];
-        }
+        System.arraycopy(nums, 0, initialDp, 0, nums.length);
 
         int[] secondDp = new int[nums.length];
 

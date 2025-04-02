@@ -14,6 +14,10 @@ public class _3_Longest_Substring_Without_Repeating_Characters {
 
         while (right < s.length()) {
             if (characterToIndexMapping.containsKey(s.charAt(right))) {
+                // Previous out of window characters are still present in hashmap
+                // since we are not deleting them, so left will be atleast left,
+                // if after left we are getting repeated value then only update
+                // left.
                 left = Math.max(left, characterToIndexMapping.get(s.charAt(right)) + 1);
             }
             characterToIndexMapping.put(s.charAt(right), right);

@@ -3,7 +3,7 @@ package org.example.Daily._2025.March._12;
 // https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/description/
 public class _2529_Maximum_Count_of_Positive_Integer_and_Negative_Integer {
 
-    private static int findIndexOfElementJustSmallerThanCurrentElement(int[] nums, int currentNumber) {
+    private static int findIndexOfElementJustSmallerThanCurrentElement(int[] nums) {
         int low = 0;
         int high = nums.length - 1;
 
@@ -20,7 +20,7 @@ public class _2529_Maximum_Count_of_Positive_Integer_and_Negative_Integer {
         return high;
     }
 
-    private static int findIndexOfElementJustGreaterThanCurrentElement(int[] nums, int currentNumber) {
+    private static int findIndexOfElementJustGreaterThanCurrentElement(int[] nums) {
         int low = 0;
         int high = nums.length - 1;
 
@@ -38,8 +38,8 @@ public class _2529_Maximum_Count_of_Positive_Integer_and_Negative_Integer {
     }
 
     public static int maximumCount(int[] nums) {
-        int indexOfLastNegativeNumber = findIndexOfElementJustSmallerThanCurrentElement(nums, 0);
-        int indexOfFirstPositiveNumber = findIndexOfElementJustGreaterThanCurrentElement(nums, 0);
+        int indexOfLastNegativeNumber = findIndexOfElementJustSmallerThanCurrentElement(nums);
+        int indexOfFirstPositiveNumber = findIndexOfElementJustGreaterThanCurrentElement(nums);
 
         int countOfNegativeElements = indexOfLastNegativeNumber + 1;
         int countOfPositiveElements = nums.length - indexOfFirstPositiveNumber;

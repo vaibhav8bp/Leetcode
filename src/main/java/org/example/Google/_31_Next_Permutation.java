@@ -2,8 +2,6 @@ package org.example.Google;
 
 // https://leetcode.com/problems/next-permutation/description/
 public class _31_Next_Permutation {
-    // 1 2 3 8 5 3 10 4 2
-    // 1 2 3 8 5 4 2  3 10
 
     private void swap(int[] nums, int i, int j) {
         int temp = nums[i];
@@ -38,4 +36,13 @@ public class _31_Next_Permutation {
         swap(nums, i, j);
         reverse(nums, i + 1);
     }
+
+    // 0 1 2 3 4 5  6 7 8
+    // 1 2 3 8 5 3 10 4 2
+    // i=5, first loop stops
+    // j=7 , second loop stops
+    // swap nums[5] and nums[7]
+    // 1 2 3 8 5 4 10 3 2
+    // Reverse from i=5+1 to last.
+    // 1 2 3 8 5 4 2 3 10
 }

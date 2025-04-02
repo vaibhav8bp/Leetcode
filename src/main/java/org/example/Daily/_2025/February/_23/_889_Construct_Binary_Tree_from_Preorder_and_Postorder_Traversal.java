@@ -1,6 +1,6 @@
 package org.example.Daily._2025.February._23;
 
-
+// https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/description/
 class TreeNode {
     int val;
     TreeNode left;
@@ -47,7 +47,7 @@ class Solution {
         }
 
         root.left = constructFromPrePost(preStart + 1, preStart + 1 + leftSubTreeLength, preorder, postStart, leftSubTreeRootIndexInPostOrder, postOrder);
-        root.right = constructFromPrePost(preStart + 1 + leftSubTreeLength + 1, preEnd, preorder, leftSubTreeRootIndexInPostOrder + 1, postEnd, postOrder);
+        root.right = constructFromPrePost(preStart + 1 + leftSubTreeLength + 1, preEnd, preorder, leftSubTreeRootIndexInPostOrder + 1, postEnd - 1, postOrder);
         return root;
     }
 

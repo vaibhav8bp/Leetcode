@@ -1,7 +1,5 @@
 package org.example.Google;
 
-import java.util.Arrays;
-
 // https://leetcode.com/problems/candy/description/
 public class _135_Candy {
 

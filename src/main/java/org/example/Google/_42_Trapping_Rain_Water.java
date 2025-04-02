@@ -1,6 +1,5 @@
 package org.example.Google;
 
-import java.util.Arrays;
 
 // https://leetcode.com/problems/trapping-rain-water/
 public class _42_Trapping_Rain_Water {

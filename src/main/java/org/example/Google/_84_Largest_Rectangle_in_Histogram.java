@@ -1,6 +1,5 @@
 package org.example.Google;
 
-import java.util.Arrays;
 import java.util.Stack;
 
 // https://leetcode.com/problems/largest-rectangle-in-histogram/description/

@@ -28,7 +28,7 @@ public class _1752_Check_if_Array_Is_Sorted_and_Rotated {
         int least = nums[0];
 
         for (int i = breakingIndex + 1; i < nums.length; i++) {
-            // Array Was Sorted So, After Rotating every element should be smaller than smallest element i.e. nums[0]
+            // Array Was Sorted So, After Rotating every element should be smaller than the smallest element i.e. nums[0]
             if (nums[i] > least) {
                 return false;
             }

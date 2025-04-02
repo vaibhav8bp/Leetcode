@@ -13,7 +13,7 @@ public class _11_Container_With_Most_Water {
     // it will never be able to contribute to maxArea because if we decrease r width will decrease for sure
     // but will height increase ? no max height a tower can contribute is = to its own height.
     // So for area to increase either width/ height should increase, here neither are happening.
-    // Therefore, always move less heights pointer.
+    // Therefore, always move less heights' pointer.
 
     public int maxArea(int[] height) {
 

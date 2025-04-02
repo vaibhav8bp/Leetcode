@@ -1,5 +1,6 @@
 package org.example.Google;
 
+// https://leetcode.com/problems/majority-element/description/
 public class _169_Majority_Element {
     public int majorityElement(int[] nums) {
 

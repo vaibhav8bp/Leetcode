@@ -7,12 +7,13 @@ package org.example.Daily._2025.February._18;
 public class _2375_Construct_Smallest_Number_From_DI_String {
 
     // IIIDIDDD
+    // 123456789
     // 123549876
 
     // DDD
     // 4321
 
-    // Simple Initialize a string with 123..
+    // Simple Initialize a string with 123.
     // In case of D's reverse the length.
     // Observe First Example Carefully.
     // III -> For I do nothing
@@ -40,7 +41,6 @@ public class _2375_Construct_Smallest_Number_From_DI_String {
         for (int i = 0; i < pattern.length(); i++) {
             Character currentCharacter = pattern.charAt(i);
             if (currentCharacter.equals('I')) {
-                continue;
             } else if (currentCharacter.equals('D')) {
                 int end = i;
                 while (end < pattern.length() && pattern.charAt(end) == ('D')) {

@@ -1,6 +1,5 @@
 package org.example.Google;
 
-import java.util.Arrays;
 
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 public class _121_Best_Time_to_Buy_and_Sell_Stock {

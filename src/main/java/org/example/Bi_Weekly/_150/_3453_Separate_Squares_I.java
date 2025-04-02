@@ -12,7 +12,6 @@ public class _3453_Separate_Squares_I {
         for (int[] currentSquare : squares) {
             double currentSquareY = currentSquare[1];
             double currentSquareLength = currentSquare[2];
-
             double upperEndPointOfCurrentSquare = currentSquareY + currentSquareLength;
 
             // Entire Square Below yCoordinate

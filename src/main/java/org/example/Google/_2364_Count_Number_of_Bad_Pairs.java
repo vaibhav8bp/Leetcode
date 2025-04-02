@@ -1,9 +1,7 @@
 package org.example.Google;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 // https://leetcode.com/problems/count-number-of-bad-pairs/description/
 public class _2364_Count_Number_of_Bad_Pairs {
