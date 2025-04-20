@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_11_Binary_Search._4_Median_Of_Two_Sorted_Arrays;
 
+// https://leetcode.com/problems/median-of-two-sorted-arrays/description/
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int length1 = nums1.length;

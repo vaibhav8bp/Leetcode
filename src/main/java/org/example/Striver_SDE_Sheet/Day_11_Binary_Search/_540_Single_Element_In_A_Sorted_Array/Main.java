@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_11_Binary_Search._540_Single_Element_In_A_Sorted_Array;
 
+// https://leetcode.com/problems/single-element-in-a-sorted-array/description/
 class Solution {
 
     public int singleNonDuplicate(int[] nums) {

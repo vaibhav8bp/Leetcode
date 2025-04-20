@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// https://www.spoj.com/problems/AGGRCOW/
 class Solution {
 
     private static boolean areCowsAllocatableInCurrentDistance(int[] stalls, int N, int C, int currentDistance) {

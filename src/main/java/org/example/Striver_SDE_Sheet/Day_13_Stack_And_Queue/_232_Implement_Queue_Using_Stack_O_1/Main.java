@@ -2,6 +2,7 @@ package org.example.Striver_SDE_Sheet.Day_13_Stack_And_Queue._232_Implement_Queu
 
 import java.util.Stack;
 
+// https://leetcode.com/problems/implement-queue-using-stacks/description/
 class MyQueue {
 
     Stack<Integer> stack1 = new Stack<>();

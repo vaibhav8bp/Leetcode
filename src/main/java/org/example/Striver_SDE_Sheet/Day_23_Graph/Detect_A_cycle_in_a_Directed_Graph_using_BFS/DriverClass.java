@@ -33,7 +33,6 @@ class Solution {
             }
         }
 
-        System.out.println(count);
         return (count == V);
     }
 }

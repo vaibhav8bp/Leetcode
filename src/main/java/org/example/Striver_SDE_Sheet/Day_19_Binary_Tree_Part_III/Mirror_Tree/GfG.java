@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// https://www.geeksforgeeks.org/problems/mirror-tree/1
 class Node {
     int data;
     Node left;

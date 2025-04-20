@@ -2,6 +2,7 @@ package org.example.Striver_SDE_Sheet.Day_8_Greedy_Algorithm._455_Assign_Cookies
 
 import java.util.Arrays;
 
+// https://leetcode.com/problems/assign-cookies/description/
 class Solution {
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);

@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// https://leetcode.com/problems/course-schedule/description/
 // DFS
 // class Solution {
 
@@ -67,10 +68,10 @@ class Solution {
 
        Arrays.fill(degree, 0);
 
-       for (int i = 0; i < prerequisites.length; i++) {
-           // Condition on i should be before j. So condition is on j. Therefore incrementing degree of j
-           degree[prerequisites[i][1]]++;
-           matrix[prerequisites[i][0]][prerequisites[i][1]] = 1;
+       for (int[] prerequisite : prerequisites) {
+           // Condition on i should be before j. So condition is on j. Therefore, incrementing degree of j
+           degree[prerequisite[1]]++;
+           matrix[prerequisite[0]][prerequisite[1]] = 1;
        }
 
        for (int i = 0; i < numCourses; i++) {

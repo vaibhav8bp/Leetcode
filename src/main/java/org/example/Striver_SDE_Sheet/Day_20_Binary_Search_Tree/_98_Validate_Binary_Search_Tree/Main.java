@@ -1,6 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_20_Binary_Search_Tree._98_Validate_Binary_Search_Tree;
 
-
+// https://leetcode.com/problems/validate-binary-search-tree/description/
 class TreeNode {
     int val;
     TreeNode left;

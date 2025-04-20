@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Comparator;
 
+// https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1
 class Job {
     int id, profit, deadline;
 

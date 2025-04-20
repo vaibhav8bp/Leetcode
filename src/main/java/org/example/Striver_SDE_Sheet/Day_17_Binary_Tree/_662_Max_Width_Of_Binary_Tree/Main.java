@@ -1,9 +1,9 @@
 package org.example.Striver_SDE_Sheet.Day_17_Binary_Tree._662_Max_Width_Of_Binary_Tree;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// https://leetcode.com/problems/maximum-width-of-binary-tree/description/
 class TreeNode {
     int val;
     TreeNode left;

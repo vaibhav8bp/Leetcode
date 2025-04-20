@@ -3,6 +3,7 @@ package org.example.Striver_SDE_Sheet.Day_9_Recursion._39_Combination_Sum;
 import java.util.ArrayList;
 import java.util.List;
 
+// https://leetcode.com/problems/combination-sum/description/
 class Solution {
 
     void combinationSumHelper(int[] candidates, int target, int currentIndex, List<List<Integer>> finalList, List<Integer> currentList) {
@@ -16,7 +17,7 @@ class Solution {
             }
             return;
         }
-        // Check If Can Include Current Index Or Not
+        // Check If you Can Include Current Index Or Not
 
         // Cannot include current index
         if (target < candidates[currentIndex]) {

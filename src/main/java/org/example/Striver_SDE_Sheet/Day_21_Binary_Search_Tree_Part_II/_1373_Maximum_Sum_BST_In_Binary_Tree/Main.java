@@ -1,6 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_21_Binary_Search_Tree_Part_II._1373_Maximum_Sum_BST_In_Binary_Tree;
 
-
+// https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/description/
 class TreeNode {
     int val;
     TreeNode left;
@@ -47,8 +47,6 @@ class Solution {
         Helper right = maxSumBSTHelper(root.right);
 
         boolean isBST = left.isBST && right.isBST && !((root.val <= left.maxOfTree) || (root.val >= right.minOfTree));
-
-        System.out.println(isBST);
 
         int currentSum = root.val + left.sumOfAllNodes + right.sumOfAllNodes;
         if (isBST) {

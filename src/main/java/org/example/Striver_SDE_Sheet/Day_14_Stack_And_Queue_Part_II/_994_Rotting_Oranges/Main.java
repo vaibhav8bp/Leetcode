@@ -3,6 +3,7 @@ package org.example.Striver_SDE_Sheet.Day_14_Stack_And_Queue_Part_II._994_Rottin
 import java.util.ArrayDeque;
 import java.util.Queue;
 
+// https://leetcode.com/problems/rotting-oranges/
 class Helper {
     public int row;
     public int column;
@@ -16,6 +17,12 @@ class Helper {
 }
 
 class Solution {
+
+    private final int[][] directions = {{-1, 0}, {0, +1}, {0, -1}, {+1, 0}};
+
+    private boolean isCurrentPositionValid(int currentRow, int currentColumn, int rowCount, int columnCount) {
+        return ((currentRow >= 0) && (currentRow < rowCount) && (currentColumn >= 0) && (currentColumn < columnCount));
+    }
 
     private int placeInitialOrangesInQueueAndReturnCountOfFreshOranges(int[][] grid, Queue<Helper> queue) {
 
@@ -40,32 +47,14 @@ class Solution {
 
         int count = 0;
 
-        //UP
-        if (((row - 1) >= 0) && grid[row - 1][column] == 1) {
-            grid[row - 1][column] = 2;
-            queue.add(new Helper(row - 1, column, currentTime + 1));
-            count++;
-        }
-
-        //RIGHT
-        if (((column + 1) < columns) && grid[row][column + 1] == 1) {
-            grid[row][column + 1] = 2;
-            queue.add(new Helper(row, column + 1, currentTime + 1));
-            count++;
-        }
-
-        //DOWN
-        if (((row + 1) < rows) && grid[row + 1][column] == 1) {
-            grid[row + 1][column] = 2;
-            queue.add(new Helper(row + 1, column, currentTime + 1));
-            count++;
-        }
-
-        //LEFT
-        if (((column - 1) >= 0) && grid[row][column - 1] == 1) {
-            grid[row][column - 1] = 2;
-            queue.add(new Helper(row, column - 1, currentTime + 1));
-            count++;
+        for (int[] currentDirection : directions) {
+            int newRow = row + currentDirection[0];
+            int newColumn = column + currentDirection[1];
+            if (isCurrentPositionValid(newRow, newColumn, rows, columns) && grid[newRow][newColumn] == 1) {
+                grid[newRow][newColumn] = 2;
+                queue.add(new Helper(newRow, newColumn, currentTime + 1));
+                count++;
+            }
         }
 
         return count;

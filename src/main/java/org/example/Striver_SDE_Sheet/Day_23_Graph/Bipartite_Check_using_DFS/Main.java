@@ -2,6 +2,7 @@ package org.example.Striver_SDE_Sheet.Day_23_Graph.Bipartite_Check_using_DFS;
 
 import java.util.Arrays;
 
+// https://leetcode.com/problems/is-graph-bipartite/description/
 class Solution {
 
     private boolean isBipartite(int currentIndex, int[][] graph, int[] color) {

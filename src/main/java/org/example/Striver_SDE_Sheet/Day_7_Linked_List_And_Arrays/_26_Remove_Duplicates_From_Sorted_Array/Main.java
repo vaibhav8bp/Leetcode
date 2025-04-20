@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_7_Linked_List_And_Arrays._26_Remove_Duplicates_From_Sorted_Array;
 
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 class Solution {
     public int removeDuplicates(int[] nums) {
         int nextAvailableIndex = 0;

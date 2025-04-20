@@ -58,7 +58,7 @@ class Solution {
 
         // Step 3: Perform DFS on reversed graph and starting point will be stack's top
         // no. of DFS traversals is the count of SCC's
-        // If want to store those SCC too can pass a list and populate it
+        // If you want to store those SCC too can pass a list and populate it
         int DFSTraversalCount = 0;
         Arrays.fill(visited, false);
 

@@ -4,6 +4,7 @@ package org.example.Striver_SDE_Sheet.Day_20_Binary_Search_Tree._116_Populating_
 import java.util.LinkedList;
 import java.util.Queue;
 
+// https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/
 class Node {
     public int val;
     public Node left;

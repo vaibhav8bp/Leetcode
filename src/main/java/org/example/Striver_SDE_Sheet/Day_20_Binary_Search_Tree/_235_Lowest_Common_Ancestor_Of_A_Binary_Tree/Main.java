@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_20_Binary_Search_Tree._235_Lowest_Common_Ancestor_Of_A_Binary_Tree;
 
+// https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/
 class TreeNode {
     int val;
     TreeNode left;
@@ -9,7 +10,6 @@ class TreeNode {
         val = x;
     }
 }
-
 
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

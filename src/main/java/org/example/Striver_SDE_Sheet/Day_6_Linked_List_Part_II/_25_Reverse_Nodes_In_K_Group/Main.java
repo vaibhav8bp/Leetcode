@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_6_Linked_List_Part_II._25_Reverse_Nodes_In_K_Group;
 
+// https://leetcode.com/problems/reverse-nodes-in-k-group/description/
 class ListNode {
     int val;
     ListNode next;

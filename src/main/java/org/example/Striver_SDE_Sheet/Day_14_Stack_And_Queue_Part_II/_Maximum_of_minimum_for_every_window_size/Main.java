@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Stack;
 
+// https://www.naukri.com/code360/problems/max-of-min_982935
 class Solution {
 
     private static void formulatePreviousSmaller(int[] arr, int n, Stack<Integer> stack, int[] previousSmaller) {
@@ -51,6 +52,8 @@ class Solution {
 
         for (int i = 0; i < n; i++) {
             // One more -1 for avoiding n+1 length array
+            // what this is doing that we are checking in window of length nextSmaller[i] - previousSmaller[i] - 1 - 1
+            // we can at-least get arr[i] as the answer, because between nextSmaller[i] and previousSmaller[i],arr[i] is the biggest.
             result[nextSmaller[i] - previousSmaller[i] - 1 - 1] = Math.max(result[nextSmaller[i] - previousSmaller[i] - 1 - 1], arr[i]);
         }
 
@@ -84,3 +87,9 @@ public class Main {
         }
     }
 }
+
+/*
+1
+4
+1 2 3 4
+ */

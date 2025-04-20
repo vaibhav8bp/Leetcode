@@ -1,4 +1,4 @@
-package org.example.Striver_SDE_Sheet.Day_25_Dynamic_Programming._152_Maximum_Product_Subarray;
+package org.example.Striver_SDE_Sheet.Day_25_Dynamic_Programming;
 
 // https://leetcode.com/problems/edit-distance/description/
 public class _72_Edit_Distance {

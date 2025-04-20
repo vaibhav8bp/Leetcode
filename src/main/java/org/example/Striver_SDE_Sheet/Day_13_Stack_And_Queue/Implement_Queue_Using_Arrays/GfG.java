@@ -2,6 +2,7 @@ package org.example.Striver_SDE_Sheet.Day_13_Stack_And_Queue.Implement_Queue_Usi
 
 import java.util.Scanner;
 
+// https://www.geeksforgeeks.org/problems/implement-queue-using-array/1
 class MyQueue {
 
     int front, rear;
@@ -45,13 +46,11 @@ class GfG {
             MyQueue obj = new MyQueue();
             int Q = sc.nextInt();
             while (Q > 0) {
-                int QueryType = 0;
+                int QueryType;
                 QueryType = sc.nextInt();
                 if (QueryType == 1) {
                     int a = sc.nextInt();
-
                     obj.push(a);
-
                 } else if (QueryType == 2) {
                     System.out.print(obj.pop() + " ");
                 }

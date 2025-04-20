@@ -1,7 +1,8 @@
-package org.example.Striver_SDE_Sheet.Day_11_Binary_Search.Matrix_Median;
+package org.example.Striver_SDE_Sheet.Day_11_Binary_Search.Median_in_a_row_wise_sorted_Matrix;
 
 import java.io.*;
 
+// https://www.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix1527/1
 class Solution {
 
     private int[] minAndMaxOfMatrix(int[][] matrix, int R, int C) {
@@ -37,7 +38,9 @@ class Solution {
         return answer;
     }
 
-    int median(int[][] matrix, int R, int C) {
+    int median(int[][] matrix) {
+        int R = matrix.length;
+        int C = matrix[0].length;
         int[] minAndMaxOfMatrix = minAndMaxOfMatrix(matrix, R, C);
         int low = minAndMaxOfMatrix[0];
         int high = minAndMaxOfMatrix[1];
@@ -57,14 +60,12 @@ class Solution {
 }
 
 public class GFG {
-    public static void main(String[] args) throws IOException {
+    public static void main(String args[]) throws IOException {
         BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(read.readLine());
         while (t-- > 0) {
-            String[] S = read.readLine().split(" ");
-            int R = Integer.parseInt(S[0]);
-            int C = Integer.parseInt(S[1]);
-
+            int R = Integer.parseInt(read.readLine());
+            int C = Integer.parseInt(read.readLine());
             int[][] matrix = new int[R][C];
             for (int i = 0; i < R; i++) {
                 String[] line = read.readLine().trim().split(" ");
@@ -73,14 +74,9 @@ public class GFG {
                 }
             }
             Solution ob = new Solution();
-            int ans = ob.median(matrix, R, C);
+            int ans = ob.median(matrix);
             System.out.println(ans);
+            System.out.println("~");
         }
     }
 }
-
-//1
-//3 3
-//1 3 5
-//2 6 9
-//3 6 9

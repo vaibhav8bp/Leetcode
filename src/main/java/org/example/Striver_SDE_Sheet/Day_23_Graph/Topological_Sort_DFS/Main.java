@@ -3,6 +3,7 @@ package org.example.Striver_SDE_Sheet.Day_23_Graph.Topological_Sort_DFS;
 import java.util.*;
 import java.io.*;
 
+// https://www.geeksforgeeks.org/problems/topological-sort/1
 class Solution {
 
     static void topoSort(int currentIndex, Stack<Integer> stack, boolean[] visited, ArrayList<ArrayList<Integer>> adj) {

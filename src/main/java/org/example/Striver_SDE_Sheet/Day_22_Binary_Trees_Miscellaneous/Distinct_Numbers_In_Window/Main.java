@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+// https://www.interviewbit.com/problems/distinct-numbers-in-window/
 class Solution {
 
     private void addNumberToHashMap(int currentNumber, Map<Integer, Integer> numberToFrequencyMapping) {

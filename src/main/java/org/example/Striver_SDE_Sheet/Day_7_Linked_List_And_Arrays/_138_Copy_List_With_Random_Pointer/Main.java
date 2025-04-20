@@ -3,6 +3,7 @@ package org.example.Striver_SDE_Sheet.Day_7_Linked_List_And_Arrays._138_Copy_Lis
 import java.util.HashMap;
 import java.util.Map;
 
+// https://leetcode.com/problems/copy-list-with-random-pointer/description/
 class Node {
     int val;
     Node next;
@@ -14,7 +15,6 @@ class Node {
         this.random = null;
     }
 }
-
 
 class Solution {
     public Node copyRandomList(Node head) {
@@ -59,4 +59,3 @@ public class Main {
 
     }
 }
-

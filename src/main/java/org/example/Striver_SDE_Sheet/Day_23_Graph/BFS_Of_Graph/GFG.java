@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1
 class Solution {
     public ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
         Queue<Integer> queue = new LinkedList<>();

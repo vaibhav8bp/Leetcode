@@ -1,9 +1,8 @@
 package org.example.Striver_SDE_Sheet.Day_6_Linked_List_Part_II.Flatteing_A_Linked_List;
 
-//{ Driver Code Starts
-
 import java.util.Scanner;
 
+// https://www.geeksforgeeks.org/problems/flattening-a-linked-list/1
 class Node {
     int data;
     Node next;
@@ -15,7 +14,6 @@ class Node {
         bottom = null;
     }
 }
-
 
 class Flatttening_A_LinkedList {
     Node head;
@@ -65,7 +63,6 @@ class Flatttening_A_LinkedList {
                 }
 
             }
-            //list.printList();
             GfG g = new GfG();
             Node root = g.flatten(list.head);
             list.printList(root);
@@ -75,7 +72,6 @@ class Flatttening_A_LinkedList {
     }
 
     void printList(Node node) {
-        //Node temp = head;
         while (node != null) {
             System.out.print(node.data + " ");
             node = node.bottom;
@@ -83,8 +79,6 @@ class Flatttening_A_LinkedList {
         System.out.println();
     }
 }
-// } Driver Code Ends
-
 
 public class GfG {
 
@@ -138,8 +132,6 @@ public class GfG {
         if (root == null || root.next == null) {
             return root;
         }
-
-        // Your code here
 
         Node previousSortedLLTillNow = null;
         Node currentNode = root;

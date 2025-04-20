@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_16_String_Part_II._38_Count_And_Say;
 
+// https://leetcode.com/problems/count-and-say/
 class Solution {
     public String countAndSay(int n) {
         if (n == 1) {

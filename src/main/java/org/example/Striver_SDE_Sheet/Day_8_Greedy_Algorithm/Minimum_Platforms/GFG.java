@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+// https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1
+
 // Sort arr and dep
 // Take 2 pointers
 // if it is time for arrival we will need a platform
@@ -69,31 +71,6 @@ class Solution {
     }
 }
 
-//1
-//6
-//0900 0940 0950 1100 1500 1800
-//0910 1200 1120 1130 1900 2000
-
-//1
-//3
-//0900 1100 1235
-//1000 1200 1240
-
-//1
-//3
-//900 910 920
-//905 915 925
-
-//1
-//5
-//900 910 915 920 925
-//905 915 925 925 930
-
-//1
-//6
-//900 945 955 1100 1500 1800
-//920 1200 1130 1150 1900 2000
-
 public class GFG {
     public static void main(String[] args) throws IOException {
         BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
@@ -122,3 +99,28 @@ public class GFG {
 //4
 //1026 0445 0145 0555
 //1713 2242 1144 0848
+
+//1
+//6
+//0900 0940 0950 1100 1500 1800
+//0910 1200 1120 1130 1900 2000
+
+//1
+//3
+//0900 1100 1235
+//1000 1200 1240
+
+//1
+//3
+//900 910 920
+//905 915 925
+
+//1
+//5
+//900 910 915 920 925
+//905 915 925 925 930
+
+//1
+//6
+//900 945 955 1100 1500 1800
+//920 1200 1130 1150 1900 2000

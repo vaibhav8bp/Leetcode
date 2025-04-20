@@ -1,8 +1,8 @@
 package org.example.Striver_SDE_Sheet.Day_13_Stack_And_Queue._225_Implement_Stack_Using_Queue_Single_Queue;
 
-
 import java.util.LinkedList;
 
+// https://leetcode.com/problems/implement-stack-using-queues/description/
 //Using 1 Queue
 class MyStack {
 

@@ -1,6 +1,7 @@
 package org.example.Weekly._438;
 
-public class Q1_Check_If_Digits_Are_Equal_in_String_After_Operations_I {
+// https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/description/
+public class _3461_Check_If_Digits_Are_Equal_in_String_After_Operations_I {
     public boolean hasSameDigits(String s) {
         StringBuilder current = new StringBuilder(s);
 

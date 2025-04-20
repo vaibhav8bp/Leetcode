@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_18_Binary_Tree_Part_II._543_Diameter_Of_Binary_Tree;
 
+// https://leetcode.com/problems/diameter-of-binary-tree/description/
 class TreeNode {
     int val;
     TreeNode left;

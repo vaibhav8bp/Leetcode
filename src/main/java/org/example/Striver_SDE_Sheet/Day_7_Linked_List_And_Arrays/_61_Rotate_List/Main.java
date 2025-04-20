@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_7_Linked_List_And_Arrays._61_Rotate_List;
 
+// https://leetcode.com/problems/rotate-list/description/
 class ListNode {
     int val;
     ListNode next;

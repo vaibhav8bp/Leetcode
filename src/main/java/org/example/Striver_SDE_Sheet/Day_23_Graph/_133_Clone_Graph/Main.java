@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+// https://leetcode.com/problems/clone-graph/description/
 class Node {
     public int val;
     public List<Node> neighbors;
@@ -30,7 +31,7 @@ class Solution {
 
     private void populateMapping(Node currentNode, Map<Integer, Node> valueToNodeMapping) {
 
-        Node currentNewNode = null;
+        Node currentNewNode;
 
         if (valueToNodeMapping.containsKey(currentNode.val)) {
             currentNewNode = valueToNodeMapping.get(currentNode.val);
@@ -43,7 +44,7 @@ class Solution {
         for (int i = 0; i < currentNode.neighbors.size(); i++) {
             Node currentNeighbor = currentNode.neighbors.get(i);
 
-            Node currentNeighBorNewNode = null;
+            Node currentNeighBorNewNode;
             if (!valueToNodeMapping.containsKey(currentNeighbor.val)) {
                 currentNeighBorNewNode = new Node(currentNeighbor.val);
                 valueToNodeMapping.put(currentNeighbor.val, currentNeighBorNewNode);

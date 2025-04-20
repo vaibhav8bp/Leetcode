@@ -1,10 +1,10 @@
 package org.example.Striver_SDE_Sheet.Day_13_Stack_And_Queue.Implement_Stack_Using_Arrays;
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// https://www.geeksforgeeks.org/problems/implement-stack-using-array/1
 class MyStack {
     int top;
     int[] arr = new int[1000];

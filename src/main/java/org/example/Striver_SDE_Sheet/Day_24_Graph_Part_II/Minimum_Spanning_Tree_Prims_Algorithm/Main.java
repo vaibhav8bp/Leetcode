@@ -3,6 +3,7 @@ package org.example.Striver_SDE_Sheet.Day_24_Graph_Part_II.Minimum_Spanning_Tree
 import java.io.*;
 import java.util.*;
 
+// https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1
 class Solution {
 
     static int findMinVertex(int V, List<List<int[]>> adj, int[] distance, boolean[] visited) {

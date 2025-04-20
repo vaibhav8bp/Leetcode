@@ -2,6 +2,7 @@ package org.example.Striver_SDE_Sheet.Day_14_Stack_And_Queue_Part_II._84_Largest
 
 import java.util.Stack;
 
+// https://leetcode.com/problems/largest-rectangle-in-histogram/description/
 class Solution {
     public int largestRectangleArea(int[] heights) {
         int maxArea = 0;

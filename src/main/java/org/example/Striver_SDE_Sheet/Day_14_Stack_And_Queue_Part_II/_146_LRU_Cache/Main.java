@@ -3,6 +3,7 @@ package org.example.Striver_SDE_Sheet.Day_14_Stack_And_Queue_Part_II._146_LRU_Ca
 import java.util.HashMap;
 import java.util.Map;
 
+// https://leetcode.com/problems/lru-cache/description/
 class Node {
     public int key;
     public int value;

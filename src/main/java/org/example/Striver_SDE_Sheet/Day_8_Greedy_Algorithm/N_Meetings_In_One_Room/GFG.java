@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+// https://www.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1
 class StartEndPair {
     public int start;
     public int end;
@@ -36,7 +37,7 @@ class Solution {
         startEndPairList.sort(startEndPairComparator);
 
         int meetingsTakenPlace = 1; // For Initial Meeting
-        int lastMeetingTime = startEndPairList.get(0).end;
+        int lastMeetingTime = startEndPairList.getFirst().end;
 
         for (int i = 1; i < n; i++) {
             if (startEndPairList.get(i).start > lastMeetingTime) {
@@ -48,15 +49,6 @@ class Solution {
         return meetingsTakenPlace;
     }
 }
-//1
-//3
-//10 12 20
-//20 25 30
-
-//1
-//6
-//1 3 0 5 8 5
-//2 4 6 7 9 9
 
 public class GFG {
     public static void main(String[] args) throws IOException {
@@ -83,3 +75,13 @@ public class GFG {
         }
     }
 }
+
+//1
+//3
+//10 12 20
+//20 25 30
+
+//1
+//6
+//1 3 0 5 8 5
+//2 4 6 7 9 9

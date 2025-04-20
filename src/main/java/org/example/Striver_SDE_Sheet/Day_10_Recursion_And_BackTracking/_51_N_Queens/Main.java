@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
  import java.util.stream.Stream;
 
+ // https://leetcode.com/problems/n-queens/description/
 // Brute Force
 //    boolean isQueenAllowedHere(int currentRow, int currentColumn, int n, char[][] board, boolean[] top, boolean[] leftDiagonal, boolean[] rightDiagonal) {
 //        // Check In Column

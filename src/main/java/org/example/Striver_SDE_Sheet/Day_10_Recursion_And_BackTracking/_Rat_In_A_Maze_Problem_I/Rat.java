@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
+// https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1
 class Solution {
 
     //                                             UP              DOWN              LEFT             RIGHT

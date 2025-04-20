@@ -1,4 +1,4 @@
-package org.example.Striver_SDE_Sheet.Day_25_Dynamic_Programming._152_Maximum_Product_Subarray;
+package org.example.Striver_SDE_Sheet.Day_25_Dynamic_Programming;
 
 import java.util.ArrayList;
 import java.util.List;

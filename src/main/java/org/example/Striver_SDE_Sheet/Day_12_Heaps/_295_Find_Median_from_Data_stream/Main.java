@@ -3,6 +3,7 @@ package org.example.Striver_SDE_Sheet.Day_12_Heaps._295_Find_Median_from_Data_st
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+// https://leetcode.com/problems/find-median-from-data-stream/description/
 class MedianFinder {
 
     PriorityQueue<Integer> minHeap = new PriorityQueue<>();

@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1
 class Node {
     int data;
     Node left;

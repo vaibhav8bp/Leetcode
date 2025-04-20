@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_23_Graph._200_Number_Of_Islands;
 
+// https://leetcode.com/problems/number-of-islands/description/
 class Solution {
 
     int[][] directions = {{-1, 0}, {0, +1}, {+1, 0}, {0, -1}};

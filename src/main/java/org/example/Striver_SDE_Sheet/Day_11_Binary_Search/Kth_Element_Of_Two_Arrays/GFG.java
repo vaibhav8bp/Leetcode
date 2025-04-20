@@ -1,13 +1,16 @@
 package org.example.Striver_SDE_Sheet.Day_11_Binary_Search.Kth_Element_Of_Two_Arrays;
 
-import java.util.*;
 import java.io.*;
 
+// https://www.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317/1
 class Solution {
-    public long kthElement(int[] arr1, int[] arr2, int n, int m, int k) {
+    public long kthElement(int[] a, int[] b, int k) {
+
+        int n = a.length;
+        int m = b.length;
 
         if (n > m) {
-            return kthElement(arr2, arr1, m, n, k);
+            return kthElement(b, a, k);
         }
 
         int low = Math.max(0, k - m);
@@ -17,10 +20,10 @@ class Solution {
 
             int mid = (low + high) / 2;
 
-            int l1 = (mid - 1 >= 0) ? arr1[mid - 1] : Integer.MIN_VALUE;
-            int l2 = ((k - mid - 1) >= 0) ? arr2[k - mid - 1] : Integer.MIN_VALUE;
-            int r1 = (mid < n) ? arr1[mid] : Integer.MAX_VALUE;
-            int r2 = ((k - mid) < m) ? arr2[k - mid] : Integer.MAX_VALUE;
+            int l1 = (mid - 1 >= 0) ? a[mid - 1] : Integer.MIN_VALUE;
+            int l2 = ((k - mid - 1) >= 0) ? b[k - mid - 1] : Integer.MIN_VALUE;
+            int r1 = (mid < n) ? a[mid] : Integer.MAX_VALUE;
+            int r2 = ((k - mid) < m) ? b[k - mid] : Integer.MAX_VALUE;
 
             if (l1 > r2) {
                 high = mid - 1;
@@ -40,28 +43,23 @@ class GFG {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine().trim());
         while (t-- > 0) {
-            StringTokenizer stt = new StringTokenizer(br.readLine());
+            int k = Integer.parseInt(br.readLine().trim());
 
-            int n = Integer.parseInt(stt.nextToken());
-            int m = Integer.parseInt(stt.nextToken());
-            int k = Integer.parseInt(stt.nextToken());
-            int[] a = new int[(int) (n)];
-            int[] b = new int[(int) (m)];
-
-
-            String[] inputLine = br.readLine().trim().split(" ");
-            for (int i = 0; i < n; i++) {
-                a[i] = Integer.parseInt(inputLine[i]);
-            }
-            String[] inputLine1 = br.readLine().trim().split(" ");
-            for (int i = 0; i < m; i++) {
-                b[i] = Integer.parseInt(inputLine1[i]);
+            String[] line1 = br.readLine().trim().split(" ");
+            int[] a = new int[line1.length];
+            for (int i = 0; i < line1.length; i++) {
+                a[i] = Integer.parseInt(line1[i]);
             }
 
+            String[] line2 = br.readLine().trim().split(" ");
+            int[] b = new int[line2.length];
+            for (int i = 0; i < line2.length; i++) {
+                b[i] = Integer.parseInt(line2[i]);
+            }
 
-            Solution obj = new Solution();
-            System.out.println(obj.kthElement(a, b, n, m, k));
-
+            Solution ob = new Solution();
+            System.out.println(ob.kthElement(a, b, k));
+            System.out.println("~");
         }
     }
 }

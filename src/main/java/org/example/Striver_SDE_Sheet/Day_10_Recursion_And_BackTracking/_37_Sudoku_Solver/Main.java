@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// https://leetcode.com/problems/sudoku-solver/description/
 class Solution {
 
     public boolean isNumberAllowedAtCurrentPosition(char currentNumber, int currentRow, int currentColumn, char[][] board) {

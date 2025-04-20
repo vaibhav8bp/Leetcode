@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// https://leetcode.com/problems/is-graph-bipartite/description/
 class Solution {
     private boolean isBiPartite(int currentIndex, int[][] graph, int[] color, Queue<Integer> queue) {
         queue.add(currentIndex);

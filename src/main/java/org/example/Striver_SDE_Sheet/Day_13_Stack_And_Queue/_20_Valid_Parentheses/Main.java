@@ -2,6 +2,7 @@ package org.example.Striver_SDE_Sheet.Day_13_Stack_And_Queue._20_Valid_Parenthes
 
 import java.util.Stack;
 
+// https://leetcode.com/problems/valid-parentheses/description/
 class Solution {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();

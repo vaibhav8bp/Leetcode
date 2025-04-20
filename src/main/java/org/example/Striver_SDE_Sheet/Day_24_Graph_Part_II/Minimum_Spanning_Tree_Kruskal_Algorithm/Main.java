@@ -4,6 +4,7 @@ import java.io.*;
 import java.lang.*;
 import java.util.*;
 
+// https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1
 class Edge {
     int sourceVertex;
     int destinationVertex;

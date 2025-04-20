@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 
+// https://www.interviewbit.com/problems/maximum-sum-combinations/
 class Solution {
     public ArrayList<Integer> solve(ArrayList<Integer> A, ArrayList<Integer> B, int C) {
         A.sort((a, b) -> b - a);

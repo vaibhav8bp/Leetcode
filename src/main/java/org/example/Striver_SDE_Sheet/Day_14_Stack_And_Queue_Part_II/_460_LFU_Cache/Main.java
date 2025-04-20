@@ -3,6 +3,7 @@ package org.example.Striver_SDE_Sheet.Day_14_Stack_And_Queue_Part_II._460_LFU_Ca
 import java.util.HashMap;
 import java.util.Map;
 
+// https://leetcode.com/problems/lfu-cache/description/
 class Node {
     int key;
     int value;
@@ -142,6 +143,7 @@ class LFUCache {
             if (keyToNodeMapping.size() == capacity) {
                 int keyToBeDeleted = frequencyToLRUNodeMapping.get(minimumFrequency).head.key;
                 DoublyLinkedList minimumFrequencyDLL = frequencyToLRUNodeMapping.get(minimumFrequency);
+
                 if (minimumFrequencyDLL.head == minimumFrequencyDLL.tail) {
                     frequencyToLRUNodeMapping.remove(minimumFrequency);
                 } else {
@@ -162,12 +164,17 @@ class LFUCache {
 
 public class Main {
     public static void main(String[] args) {
-        LFUCache obj = new LFUCache(2);
-        obj.put(2, 1);
+        LFUCache obj = new LFUCache(3);
         obj.put(2, 2);
-        System.out.println(obj.get(2));
         obj.put(1, 1);
-        obj.put(4, 1);
         System.out.println(obj.get(2));
+        System.out.println(obj.get(1));
+        System.out.println(obj.get(2));
+        obj.put(3, 3);
+        obj.put(4, 4);
+        System.out.println(obj.get(3));
+        System.out.println(obj.get(2));
+        System.out.println(obj.get(1));
+        System.out.println(obj.get(4));
     }
 }

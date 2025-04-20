@@ -1,8 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_19_Binary_Tree_Part_III._114_Flatten_Binary_Tree_To_Linked_List;
 
-
-import java.util.Stack;
-
+// https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/
 class TreeNode {
     int val;
     TreeNode left;

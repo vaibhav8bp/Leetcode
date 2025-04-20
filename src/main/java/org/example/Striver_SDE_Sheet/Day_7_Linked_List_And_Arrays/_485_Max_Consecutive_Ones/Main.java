@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_7_Linked_List_And_Arrays._485_Max_Consecutive_Ones;
 
+// https://leetcode.com/problems/max-consecutive-ones/description/
 class Solution {
     public int findMaxConsecutiveOnes(int[] nums) {
         int maxLength = 0;

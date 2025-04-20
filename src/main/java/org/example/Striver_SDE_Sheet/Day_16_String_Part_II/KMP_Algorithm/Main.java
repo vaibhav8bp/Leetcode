@@ -2,6 +2,7 @@ package org.example.Striver_SDE_Sheet.Day_16_String_Part_II.KMP_Algorithm;
 
 import java.util.Arrays;
 
+// https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/
 class Solution {
 
     private void computeLPSArray(int[] lps, String needle) {

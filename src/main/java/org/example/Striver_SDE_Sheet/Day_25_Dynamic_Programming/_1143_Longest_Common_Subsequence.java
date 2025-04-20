@@ -1,4 +1,4 @@
-package org.example.Striver_SDE_Sheet.Day_25_Dynamic_Programming._152_Maximum_Product_Subarray;
+package org.example.Striver_SDE_Sheet.Day_25_Dynamic_Programming;
 
 // https://leetcode.com/problems/longest-common-subsequence/description/
 public class _1143_Longest_Common_Subsequence {

@@ -2,6 +2,7 @@ package org.example.Striver_SDE_Sheet.Day_12_Heaps.Merge_K_Sorted_Arrays;
 
 import java.util.*;
 
+// https://www.naukri.com/code360/problems/merge-k-sorted-arrays_975379
 class Helper {
     int arrayIndex;
     int indexInArray;

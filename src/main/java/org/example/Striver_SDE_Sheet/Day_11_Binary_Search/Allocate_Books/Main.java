@@ -3,6 +3,7 @@ package org.example.Striver_SDE_Sheet.Day_11_Binary_Search.Allocate_Books;
 import java.util.ArrayList;
 import java.util.Comparator;
 
+// https://www.interviewbit.com/problems/allocate-books/
 class Solution {
 
     private boolean canAllocate(int maxPages, ArrayList<Integer> books, int studentCount) {

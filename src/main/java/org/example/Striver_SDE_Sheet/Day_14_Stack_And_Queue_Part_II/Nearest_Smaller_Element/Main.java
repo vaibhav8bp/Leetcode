@@ -3,6 +3,7 @@ package org.example.Striver_SDE_Sheet.Day_14_Stack_And_Queue_Part_II.Nearest_Sma
 import java.util.Arrays;
 import java.util.Stack;
 
+// https://www.interviewbit.com/problems/nearest-smaller-element/
 class Solution {
     public int[] prevSmaller(int[] A) {
         Stack<Integer> stack = new Stack<>();

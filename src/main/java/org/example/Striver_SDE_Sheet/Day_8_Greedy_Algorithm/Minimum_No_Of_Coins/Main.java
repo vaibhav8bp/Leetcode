@@ -3,6 +3,7 @@ package org.example.Striver_SDE_Sheet.Day_8_Greedy_Algorithm.Minimum_No_Of_Coins
 import java.io.*;
 import java.util.*;
 
+// https://www.geeksforgeeks.org/problems/number-of-coins1824/1
 class Solution {
 
     static final int[] DENOMINATIONS = {1, 2, 5, 10, 20, 50, 100, 200, 500, 2000};

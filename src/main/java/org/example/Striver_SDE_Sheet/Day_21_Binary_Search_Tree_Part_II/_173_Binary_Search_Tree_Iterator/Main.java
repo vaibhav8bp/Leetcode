@@ -4,6 +4,7 @@ package org.example.Striver_SDE_Sheet.Day_21_Binary_Search_Tree_Part_II._173_Bin
 import java.util.ArrayList;
 import java.util.List;
 
+// https://leetcode.com/problems/binary-search-tree-iterator/description/
 class TreeNode {
     int val;
     TreeNode left;
@@ -25,7 +26,7 @@ class TreeNode {
 
 class BSTIterator {
 
-    int currentPointer = -1;
+    int currentPointer;
     List<Integer> list;
 
     private void populateList(TreeNode root) {

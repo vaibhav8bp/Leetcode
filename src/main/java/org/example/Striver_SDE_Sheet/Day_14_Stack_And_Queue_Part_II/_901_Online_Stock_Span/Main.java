@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+// https://leetcode.com/problems/online-stock-span/description/
 class StockSpanner {
 
     List<Integer> integerList;

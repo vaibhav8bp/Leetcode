@@ -1,6 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_7_Linked_List_And_Arrays._42_Trapping_Rainwater;
 
-
+// https://leetcode.com/problems/trapping-rain-water/description/
 // SC -O(1), TC -O(N)
 class Solution {
     public int trap(int[] height) {

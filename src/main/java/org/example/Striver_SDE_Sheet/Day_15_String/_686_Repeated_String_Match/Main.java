@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_15_String._686_Repeated_String_Match;
 
+// https://leetcode.com/problems/repeated-string-match/description/
 class Solution {
 
     private final long BASE = 26;
@@ -57,7 +58,7 @@ class Solution {
             if (b.isEmpty()) {
                 return 0;
             }
-            // a and b both non empty
+            // a and b both non-empty
             else {
                 StringBuilder aBuilder = new StringBuilder(a);
                 int count = 1;

@@ -2,6 +2,7 @@ package org.example.Striver_SDE_Sheet.Day_16_String_Part_II._242_Valid_Anagram;
 
 import java.util.Arrays;
 
+// https://leetcode.com/problems/valid-anagram/description/
 class Solution {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {

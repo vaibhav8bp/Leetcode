@@ -4,7 +4,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class Q2_Maximum_Sum_With_at_Most_K_Elements {
+// https://leetcode.com/problems/maximum-sum-with-at-most-k-elements/description/
+public class _3462_Maximum_Sum_With_at_Most_K_Elements {
     public long maxSum(int[][] grid, int[] limits, int k) {
 
         int rows = grid.length;

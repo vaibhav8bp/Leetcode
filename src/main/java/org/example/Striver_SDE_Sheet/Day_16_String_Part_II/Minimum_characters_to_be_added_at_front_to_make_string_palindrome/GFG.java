@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+// https://www.interviewbit.com/problems/minimum-characters-required-to-make-a-string-palindromic/
 // Z Function Solution
 // After forming zArray. How to get the answer ?
 class Solution {

@@ -2,6 +2,7 @@ package org.example.Striver_SDE_Sheet.Day_15_String._14_Longest_Common_Prefix;
 
 import java.util.Arrays;
 
+// https://leetcode.com/problems/longest-common-prefix/description/
 class Solution {
     public String longestCommonPrefix(String[] strs) {
 

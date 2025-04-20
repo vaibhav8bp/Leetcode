@@ -1,5 +1,6 @@
 package org.example.Striver_SDE_Sheet.Day_16_String_Part_II.Z_Function;
 
+// https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/
 class Solution {
     public int strStr(String haystack, String needle) {
         String zArrayString = needle + '$' + haystack;

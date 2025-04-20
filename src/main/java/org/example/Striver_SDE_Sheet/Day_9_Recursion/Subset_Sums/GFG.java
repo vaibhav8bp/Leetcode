@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
+// https://www.geeksforgeeks.org/problems/subset-sums2234/1
 // Recursion
 class Solution {
 
@@ -26,10 +27,6 @@ class Solution {
         return sumArrayList;
     }
 }
-
-//1
-//2
-//2 3
 
 public class GFG {
     public static void main(String[] args) {

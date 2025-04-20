@@ -3,6 +3,7 @@ package org.example.Striver_SDE_Sheet.Day_13_Stack_And_Queue.Sort_A_Stack;
 import java.util.Scanner;
 import java.util.Stack;
 
+// https://www.naukri.com/code360/problems/sort-a-stack_985275
 class GfG {
 
     public void insertElementInSortedStack(Stack<Integer> s, int element) {
